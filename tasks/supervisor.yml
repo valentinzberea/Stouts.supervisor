@@ -10,7 +10,7 @@
     - supervisor restart
     
 - name: Install superlance
-  pip: name=superlance
+  pip: name=superlance  executable=pip2
   when: supervisor_superlance
 
 - name: Prepare directories
